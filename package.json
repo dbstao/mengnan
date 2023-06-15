@@ -1,7 +1,7 @@
 {
   "name": "mengnan",
   "private": false,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "main": "lib/mengnan.js",
   "scripts": {
@@ -9,14 +9,14 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "release": "np --no-yarn --no-2fa",
-    "test":""
+    "test": ""
   },
   "exports": {
     "import": "./lib/mengnan.js",
     "require": "./lib/mengnan.umd.js"
   },
-  "engines":{
-    "node":">=10 <=18"
+  "engines": {
+    "node": ">=10 <=18"
   },
   "devDependencies": {
     "@types/node": "^20.3.1",
