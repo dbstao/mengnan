@@ -14,6 +14,9 @@
     "import": "./lib/mengnan.js",
     "require": "./lib/mengnan.umd.js"
   },
+  "engines":{
+    "node":">=10 <=18"
+  },
   "devDependencies": {
     "@types/node": "^20.3.1",
     "typescript": "^5.0.2",
