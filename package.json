@@ -13,7 +13,7 @@
   },
   "exports": {
     "import": "./lib/mengnan.js",
-    "require": "./lib/mengnan.umd.js"
+    "require": "./lib/mengnan.umd.cjs"
   },
   "engines": {
     "node": ">=10 <=18"
