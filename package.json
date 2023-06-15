@@ -12,8 +12,8 @@
     "test": ""
   },
   "exports": {
-    "import": "./lib/mengnan.js",
-    "require": "./lib/mengnan.umd.cjs"
+    "import": "./lib/index.es.js",
+    "require": "./lib/index.umd.js"
   },
   "engines": {
     "node": ">=10 <=18"
