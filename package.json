@@ -10,8 +10,8 @@
   },
   "exports": {
     ".": {
-      "import": "./dist/mengnan.es.js",
-      "require": "./dist/mengnan.umd.js"
+      "import": "./lib/mengnan.js",
+      "require": "./lib/mengnan.umd.js"
     }
   },
   "devDependencies": {
