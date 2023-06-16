@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parent</title>
+</head>
+<body>
+    <div style="height:200px;border-bottom: 1px solid red;"></div>
+    <iframe src="./child.html" frameborder="0"></iframe>
+    <iframe src="./two.html" frameborder="0"></iframe>
+    <script>
+        setTimeout(() => {
+            console.log('parent', window);
+
+        }, 3000)
+    </script>
+</body>
+</html>

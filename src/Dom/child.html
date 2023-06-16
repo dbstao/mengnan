@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+      }
+      div {
+        width: 100px;
+        height: 100px;
+        border: 1px solid green;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1"></div>
+    <script>
+      console.log(window.pageYOffset,window.parent.top[0].pageYOffset);
+      // console.log(div1.getBoundingClientRect());
+      // console.log(getDomPosition(window.parent.top[0].document.body));
+      window.abc = 'child';
+
+      function getDomPosition(ele) {
+        try {
+          if (!ele)
+            throw new Error("origin:getDomPosition method, param is not null");
+        } catch (err) {}
+
+        // if (window.top !== window) {
+        //   // 页面被嵌套在iframe中
+        //   console.log(window.top);
+        //   console.log("页面被嵌套在iframe中", window.parent.top[0].document.body.getBoundingClientRect());
+        // } else {
+        //   // 页面没有被嵌套在iframe中
+        //   console.log("页面没有被嵌套在iframe中");
+        // }
+
+        const body = document.body;
+        const { width, height, bottom, left } = ele.getBoundingClientRect();
+        return {
+          windowwidth: body.clientWidth,
+          windowHeight: body.clientHeight,
+          width,
+          height,
+          topToViewTop: bottom - height,
+          // bottomToViewTop: bottom,
+          bottomToViewBottom: body.clientHeight - bottom,
+          rightToViewRight: body.clientWidth - (left + width),
+          leftToViewLeft: left,
+        };
+      }
+    </script>
+  </body>
+</html>
