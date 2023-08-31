@@ -16,6 +16,16 @@
 
 `import {getDomPosition} from 'mengnan'`
 
+## Emoji 
+
+`import {Emoji} from 'mengnan'`
+
+``` js 
+for(let k of Emoji){
+  console.log(k); // ["U+1F645", "🙅"]
+}
+```
+
 ## DOM 相关方法
 
 |  方法名   | 作用  |返回值|
